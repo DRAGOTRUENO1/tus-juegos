@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tus JUegoskis</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="Imagenes/Tus juegoskis.jpg" type="image/png">
+</head>
+<body>
+    <header>
+       <h1  id="titulo">TUS JUEGOSKIS</h1>
+       <img id="fotologo" src="Imagenes/Tus juegoskis.jpg" width="100" height="70">
+       <ul id="a_solo">
+       <a id="a_mensajes"  href="mensajitos.html">  Mensajitos :3</li></a>
+       </ul>
+    </header>
+    <nav id="barra_alfabetica">
+        <ul id="navegacion">
+          <a href="menu.html">Home</a>
+          <a href="0.html">#</a>
+          <a href="A.html">A</a>
+          <a href="B.html">B</a>
+          <a href="C.html">C</a>
+          <a href="D.html">D</a>
+          <a href="E.html">E</a>
+          <a href="F.html">F</a>
+          <a href="G.html">G</a>
+          <a href="H.html">H</a>
+          <a href="I.html">I</a>
+          <a href="J.html">J</a>
+          <a href="K.html">K</a>
+          <a href="L.html">L</a>
+          <a href="M.html">M</a>
+          <a href="N.html">N</a>
+          <a href="O.html">O</a>
+          <a href="P.html">P</a>
+          <a href="Q.html">Q</a>
+          <a href="R.html">R</a>
+          <a href="S.html">S</a>
+          <a href="T.html">T</a>
+          <a href="U.html">U</a>
+          <a href="V.html">V</a>
+          <a href="W.html">W</a>
+          <a href="X.html">X</a>
+          <a href="Y.html">Y</a>
+          <a href="Z.html">Z</a>
+        </ul>
+    </nav>
+    
+</head>
+<body>
+   
+
+    <!-- Contenedor interactivo que actúa como botón de "Me gusta" -->
+    <div id="btnLike" class="like-container">
+        <span class="heart">❤️</span>
+        <span id="contador" class="contador">0</span>
+        <p>Dale like si aparecio un juego que te gusta</p>
+    </div>
+      <script>
+        // 1. Seleccionamos los elementos
+        const botonLike = document.getElementById('btnLike');
+        const spanContador = document.getElementById('contador');
+
+        // 2. Inicializamos la variable del contador
+        let cantidadLikes = 0;
+
+        // 3. Agregamos el evento de clic al contenedor
+        botonLike.addEventListener('click', function() {
+            // Incrementamos el valor
+            cantidadLikes++;
+            
+            // Actualizamos el número en la pantalla
+            spanContador.textContent = cantidadLikes;
+        });
+    </script>
+
+
+     
+
+
+    <section id="registrar"> 
+        <div id="contenedor"> 
+            <form action="" id="formulario"> 
+                <h2>Escribenos tu juego favorito</h2> 
+                <br> 
+                <div id="campos"> 
+                    <label for="nombre">Nombre</label> 
+                    <input type="text" id="nombre" placeholder="nombre" required> 
+ 
+                    <label for="correo">Gmail</label> 
+                    <input type="email" id="correo" placeholder="pepito@Gmail.com" required> 
+ 
+                    <label for="mensaje">Juego favorito</label> 
+                    <textarea id="mensaje" placeholder="Escriba su mensaje" required>
+
+                    </textarea> 
+ 
+                    <button type="submit">Enviar Mensaje</button> 
+                </div> 
+            </form> 
+        </div> 
+    </section>
+    <footer>
+          @_ang_cam_, @by_Ow3n, @brayan.2849, @eduardozam22
+    </footer>
+
+</body>
+</html>
